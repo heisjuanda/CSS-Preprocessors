@@ -1,0 +1,148 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+section article .tabla1{
+    background-image: url('assets/backgrounds/blueTech.png');
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 10%;
+    margin-bottom: 5%;
+}
+section article .tabla1 .firstTitle h1{
+    font-size: 4vw;
+    text-align: center;
+    color: white;
+}
+section article .tabla1 img{
+    width: 5vw;
+    height: 5vw;
+}
+section article .tabla1 .description h2{
+    font-size: 1vw;
+    color: rgb(199, 197, 197);
+}
+section article .tabla1 .description{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+section article .firstSubtitle h2{
+    font-size: 4vw;
+    text-align: center;
+    color: rgb(53, 52, 52);
+}
+section article .secondSubtitle h3{
+    font-size: 1.5vw;
+    text-align: center;
+    color: gray;
+}
+section article .secondSubtitle{
+    width: 40%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;    
+}
+section article .textoRandom p{
+    font-size: 1.5vw;
+    color: black;
+    text-align: center;
+}
+section article .textoRandom{
+    margin: 7%;
+}
+section article .firstButton button{
+    border-radius: 25vw;
+    color: white;
+    background-color: aqua;
+    border: transparent;
+    font-size: 1.2vw;
+}
+section article .firstButton{
+    width: 7%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+section article .tabla2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    padding: 15%;
+    background-image: url('assets/backgrounds/runion.png');
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+section article .tabla2 .secondTitle h1{
+    font-size: 3vw;
+    text-align: center;
+    color: white;
+}
+section article .tabla2 button{
+    font-size: 2vw;
+    border-radius: 50%;
+    color: white;
+    border: none;
+    width: 7vw;
+    height: 7vw;
+    background-color: aqua;
+    margin-left: 5%;
+}
+section article .tabla2 .bton{
+    width: 8%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+section article .tabla2 .textoRandom{
+    color: white;
+    font-size: 1vw;
+    text-align: center;
+    width: 50%;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+}
+footer{
+    background-color: rgb(48, 46, 46);
+    padding: 2%;
+    padding-left: 5%;
+    color: white;
+}
+footer .tablita {
+    display: grid;
+    grid-template-columns: 5% 5%;
+    grid-template-rows: auto;
+}
+footer .tablita img{
+    width: 4vw;
+    height: 4vw;
+}
+footer .tablita p{
+    letter-spacing: 0.2vw;
+    font-size: 1.4vw;
+}
+footer .endTextFooter p{
+    color: gray;
+    font-style: normal;
+}
+footer .endTextFooter p a{
+    text-decoration: none;
+    color: gray;
+    font-style: normal;
+}
+footer .finalFooter p{
+    color: gray;
+}
