@@ -166,6 +166,8 @@ footer{
     padding: 2%;
     padding-left: 5%;
     color: white;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
 }
 footer .tablita {
     display: grid;
@@ -192,7 +194,163 @@ footer .endTextFooter p a{
 footer .finalFooter p{
     color: gray;
 }
-footer{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+.mobileTap{
+    opacity: 0;
+    visibility: hidden;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+}
+@media screen and (max-width:768px) {
+    .mobileTap{
+        opacity: 1;
+        visibility: visible;
+        background-color: transparent;
+        width: 10vw;
+        margin-left: 83%;
+        transform: translateY(5vw);
+    }
+    .mobileTap button{
+        width: 13vw;
+        height: 15vw;
+        background-color: transparent;
+        border: transparent;
+    }
+    .mobileTap button hr{
+        background-color: white;
+    }
+    section header{
+        margin-left: 5%;
+    }
+    section header .Project{
+        font-size: 8vw;
+        width: 10%;
+        color: white;
+    }
+    section header .headerPage nav ul{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+    section header .headerPage nav ul a{
+        color: white;
+        font-size: 3vw;
+        text-decoration: none;
+    }
+    /*
+        section header .headerPage nav ul{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        width: 50%;
+        height: 70vw;
+        gap: 5%;
+        margin-left: 39%;
+        background-color: rgba(0, 0, 0, 0.267);
+        transform: translateY(-10vw);
+        text-align: center;
+        border-bottom-left-radius: 25%;
+        border-top-left-radius: 25%;
+    }
+    section header .headerPage nav ul a{
+        color: white;
+        font-size: 3vw;
+        text-decoration: none;
+    }
+    */
+
+
+
+    section header .tabla1 .firstTitle h1{
+        font-size: 9vw;
+    }
+    section header .tabla1 img{
+        width: 15vw;
+        height: 15vw;
+    }
+    section header .tabla1 .description h2{
+        font-size: 4vw;
+        text-align: start;
+    }
+    section header .tabla1 .description{
+        width: 95%;
+    }
+
+    section article .firstSubtitle h2{
+        font-size: 10vw;
+        text-align: start;
+    }
+    section article .firstSubtitle{
+        padding-top: 10%;
+        width: 85%;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section article .secondSubtitle h3{
+        font-size: 5vw;
+        text-align: center;
+    }
+    section article .secondSubtitle{
+        width: 90%;
+    }
+    section article .textosRandom p{
+        font-size: 4vw;
+        text-align: start;
+    }
+    section article .textosRandom{
+        margin: 7%;
+        display: grid;
+        width: 90%;
+        grid-template-columns: 100%;
+        gap: 10%;
+    }
+    section article .firstButton button{
+        font-size: 3vw;
+        margin-top: 50%;
+        width: 20vw;
+    }
+    section article .firstButton{
+        width: 18%;
+    }
+
+    section article .tabla2 .secondTitle h1{
+        font-size: 7vw;
+    }
+    section article .tabla2 button{
+        font-size: 4vw;
+        width: 13vw;
+        height: 13vw;
+    }
+    section article .tabla2 .textoRandom{
+        font-size: 3vw;
+        text-align: center;
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    footer .tablita {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        width: 30%;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer .tablita img{
+        width: 10vw;
+        height: 10vw;
+        transform: translateY(3vw);
+    }
+    footer .tablita p{
+        letter-spacing: 0.6vw;
+        font-size: 5vw;
+    }
 }
