@@ -65,7 +65,19 @@ section header .tabla1 .firstTitle h1{
 section header .tabla1 img{
     width: 5vw;
     height: 5vw;
+    transform: scale(0.5);
+    transition: 1s;
 }
+section header .tabla1 img:hover{
+    transform: rotateY(180deg) scale(1);
+}
+/*@keyframes rotationAndZooming {
+    from{
+        transform: rotateY(0deg) scale(0.5);
+    }to{
+        transform: rotateY(180deg) scale(1);
+    }
+}*/
 section header .tabla1 .description h2{
     font-size: 1vw;
     color: rgb(199, 197, 197);
@@ -112,9 +124,33 @@ section article .firstButton button{
     border: transparent;
     font-size: 1.2vw;
     margin-bottom: 100%;
+    width: 15vw;
+    transition: 0.5s;
 }
+section article .firstButton button:hover{
+    transform: rotateZ(9deg) rotateY(10deg);
+}
+/*@keyframes rotationButton {
+    0%{
+        transform: rotateZ(0deg) rotateY(0deg);
+    }10%{
+        transform: rotateZ(0deg) rotateY(0deg);
+    }20%{
+        transform: rotateZ(0deg) rotateY(0deg);
+    }30%{
+        transform: rotateZ(0deg) rotateY(0deg);
+    }70%{
+        transform: rotateZ(9deg) rotateY(10deg) ;
+    }80%{
+        transform: rotateZ(9deg) rotateY(10deg) ;
+    }90%{
+        transform: rotateZ(9deg) rotateY(10deg);
+    }100%{
+        transform: rotateZ(9deg) rotateY(10deg);
+    }
+}*/
 section article .firstButton{
-    width: 7%;
+    width: 15%;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
@@ -136,7 +172,7 @@ section article .tabla2 .secondTitle h1{
     color: white;
 }
 section article .tabla2 button{
-    font-size: 2vw;
+    font-size: 2.5vw;
     border-radius: 50%;
     color: white;
     border: none;
@@ -144,9 +180,18 @@ section article .tabla2 button{
     height: 7vw;
     background-color: aqua;
     margin-left: 5%;
+    transition: 0.3s;
+}
+section article .tabla2 button:hover{
+    font-size: 2vw;
+    width: 6.8vw;
+    height: 6.8vw;
+    background-color: white;
+    color: aqua;
 }
 section article .tabla2 .bton{
-    width: 8%;
+    width: 10%;
+    height: 60px;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
