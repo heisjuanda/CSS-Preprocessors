@@ -2,6 +2,7 @@ body,html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 ul{
     list-style-type:none
@@ -11,8 +12,9 @@ section{
 }
 section{
     background-image: url('assets/backgrounds/blueTech.png');
-    background-attachment: fixed;
-    background-size: cover;
+    /*background-attachment: fixed;*/
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 section article .whiteBackground{
     background-color: white;
@@ -55,7 +57,7 @@ section header .tabla1{
     grid-template-rows: auto;
     text-align: center;
     padding: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 0%;
 }
 section header .tabla1 .firstTitle h1{
     font-size: 4vw;
@@ -86,9 +88,53 @@ section header .tabla1 .description{
     margin: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0%;
     width: 50%;
 }
-
+.satellites1{
+    position: relative;
+    width: 0px;
+    height: 0px;
+    transform: translate(61vw,-57.5vw);
+}
+.satellites1 img, .satellites2 img{
+    width: 28vw;
+    opacity: 1;
+    animation: 10s brillar linear infinite alternate;
+}
+@keyframes brillar {
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+.satellites2{
+    position: relative;
+    transform: translate(-10vw,-40vw);
+    opacity: 0.5;
+    width: 0px;
+    height: 0px;
+}
+.satellites3{
+    position: relative;
+    transform: translate(30vw,-50vw);
+    width: 30px;
+    height: 30px;
+}
+.satellites3 img{
+    width: 60vw;
+    animation: identifier 20s infinite linear alternate;
+}
+@keyframes identifier {
+    from{
+        transform: scale(1);
+        filter: brightness(50%);
+    }to{
+        transform: scale(1.2);
+        filter: brightness(100%);
+    }
+}
 section article .firstSubtitle h2{
     font-size: 4vw;
     text-align: center;
@@ -247,6 +293,11 @@ footer .finalFooter p{
     height: 0;
 }
 @media screen and (max-width:768px) {
+    section{
+        background-image: url('assets/backgrounds/blueTech.png');
+        background-attachment: fixed;
+        background-size: cover;
+    }
     .mobileTap{
         opacity: 1;
         visibility: visible;
@@ -305,7 +356,55 @@ footer .finalFooter p{
     }
     */
 
-
+    .satellites1{
+        position: relative;
+        width: 0vw;
+        height: 0vw;
+        transform: translate(105vw,-97.5vw) rotateZ(180deg);
+    }
+    .satellites1 img, .satellites2 img{
+        width: 28vw;
+        opacity: 1;
+        animation: 10s brillar linear infinite alternate;
+    }
+    @keyframes brillar {
+        from{
+            opacity: 1;
+        }to{
+            opacity: 0;
+        }
+    }
+    .satellites2{
+        position: relative;
+        transform: translate(-10vw,-40vw);
+        opacity: 0.5;
+        width: 0px;
+        height: 0px;
+    }
+    .satellites3{
+        position: fixed;
+        z-index: 0;
+        transform: translate(25vw,-130vw);
+        width: 30px;
+        height: 30px;
+    }
+    .satellites3 img{
+        width: 90vw;
+        animation: identifier 20s infinite linear alternate;
+    }
+    @keyframes identifier {
+        from{
+            transform: scale(1);
+            filter: brightness(50%);
+        }to{
+            transform: scale(1.2);
+            filter: brightness(100%);
+        }
+    }
+    article,footer{
+        position: relative;
+        z-index: 1;
+    }
 
     section header .tabla1 .firstTitle h1{
         font-size: 9vw;
