@@ -1,57 +1,69 @@
-body,html{
+body,
+html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
 }
-ul{
-    list-style-type:none
+
+ul {
+    list-style-type: none
 }
-section{
+
+section {
     border: 1px solid transparent;
 }
-section{
+
+section {
     background-image: url('assets/backgrounds/blueTech.png');
     /*background-attachment: fixed;*/
     background-size: contain;
     background-repeat: no-repeat;
 }
-section article .whiteBackground{
+
+section article .whiteBackground {
     background-color: white;
 }
-section header{
+
+section header {
     margin-left: 10%;
 }
-section header .Project{
+
+section header .Project {
     font-size: 3vw;
     width: 10%;
     color: white;
 }
-section header .headerPage nav ul{
+
+section header .headerPage nav ul {
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
     grid-template-rows: auto;
     width: 50%;
     gap: 5%;
-    transform: translate(20vw,-7vw);
+    transform: translate(20vw, -7vw);
 }
-section header .headerPage nav ul a{
+
+section header .headerPage nav ul a {
     color: white;
     font-size: 1.5vw;
     text-decoration: none;
 }
-section header div hr{
+
+section header div hr {
     width: 0vw;
     opacity: 0;
-    transform: translate(-1.6vw,-1vw);
+    transform: translate(-1.6vw, -1vw);
     transition: 0.3s;
 }
-section header a:hover hr{
+
+section header a:hover hr {
     width: 8vw;
     opacity: 1;
-    transform: translate(-1.6vw,-1vw);
+    transform: translate(-1.6vw, -1vw);
 }
-section header .tabla1{
+
+section header .tabla1 {
     display: grid;
     grid-template-columns: 90%;
     grid-template-rows: auto;
@@ -59,20 +71,26 @@ section header .tabla1{
     padding: 10%;
     margin-bottom: 0%;
 }
-section header .tabla1 .firstTitle h1{
+
+section header .tabla1 .firstTitle h1 {
     font-size: 4vw;
     color: white;
     width: 100%;
 }
-section header .tabla1 img{
+
+section header .tabla1 img {
     width: 5vw;
     height: 5vw;
+    position: relative;
+    z-index: 3;
     transform: scale(0.5);
     transition: 1s;
 }
-section header .tabla1 img:hover{
+
+section header .tabla1 img:hover {
     transform: rotateY(180deg) scale(1);
 }
+
 /*@keyframes rotationAndZooming {
     from{
         transform: rotateY(0deg) scale(0.5);
@@ -80,90 +98,109 @@ section header .tabla1 img:hover{
         transform: rotateY(180deg) scale(1);
     }
 }*/
-section header .tabla1 .description h2{
+section header .tabla1 .description h2 {
     font-size: 1vw;
     color: rgb(199, 197, 197);
 }
-section header .tabla1 .description{
+
+section header .tabla1 .description {
     margin: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0%;
     width: 50%;
 }
-.satellites1{
+
+.satellites1 {
     position: relative;
     width: 0px;
     height: 0px;
-    transform: translate(61vw,-57.5vw);
+    transform: translate(61vw, -57.5vw);
 }
-.satellites1 img, .satellites2 img{
+
+.satellites1 img,
+.satellites2 img {
     width: 28vw;
     opacity: 1;
     animation: 10s brillar linear infinite alternate;
 }
+
 @keyframes brillar {
-    from{
+    from {
         opacity: 1;
-    }to{
+    }
+
+    to {
         opacity: 0;
     }
 }
-.satellites2{
+
+.satellites2 {
     position: relative;
-    transform: translate(-10vw,-40vw);
+    transform: translate(-10vw, -40vw);
     opacity: 0.5;
     width: 0px;
     height: 0px;
 }
-.satellites3{
+
+.satellites3 {
     position: relative;
-    transform: translate(30vw,-50vw);
+    transform: translate(30vw, -50vw);
     width: 30px;
     height: 30px;
 }
-.satellites3 img{
+
+.satellites3 img {
     width: 60vw;
     animation: identifier 20s infinite linear alternate;
 }
+
 @keyframes identifier {
-    from{
+    from {
         transform: scale(1);
         filter: brightness(50%);
-    }to{
+    }
+
+    to {
         transform: scale(1.2);
         filter: brightness(100%);
     }
 }
-section article .firstSubtitle h2{
+
+section article .firstSubtitle h2 {
     font-size: 4vw;
     text-align: center;
     color: rgb(53, 52, 52);
 }
-section article .secondSubtitle h3{
+
+section article .secondSubtitle h3 {
     font-size: 1.5vw;
     text-align: center;
     color: gray;
 }
-section article .secondSubtitle{
+
+section article .secondSubtitle {
     width: 40%;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2%;    
+    margin-bottom: 2%;
 }
-section article .textosRandom p{
+
+section article .textosRandom p {
     font-size: 1.5vw;
     color: black;
     text-align: center;
 }
-section article .textosRandom{
+
+section article .textosRandom {
     margin: 7%;
     display: grid;
     grid-template-columns: 45% 45%;
     gap: 10%;
 }
-section article .firstButton button{
+
+section article .firstButton button {
     border-radius: 25vw;
     color: white;
     background-color: aqua;
@@ -173,9 +210,11 @@ section article .firstButton button{
     width: 15vw;
     transition: 0.5s;
 }
-section article .firstButton button:hover{
+
+section article .firstButton button:hover {
     transform: rotateZ(9deg) rotateY(10deg);
 }
+
 /*@keyframes rotationButton {
     0%{
         transform: rotateZ(0deg) rotateY(0deg);
@@ -195,14 +234,14 @@ section article .firstButton button:hover{
         transform: rotateZ(9deg) rotateY(10deg);
     }
 }*/
-section article .firstButton{
+section article .firstButton {
     width: 15%;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
 }
 
-section article .tabla2{
+section article .tabla2 {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -212,12 +251,14 @@ section article .tabla2{
     background-size: cover;
 
 }
-section article .tabla2 .secondTitle h1{
+
+section article .tabla2 .secondTitle h1 {
     font-size: 3vw;
     text-align: center;
     color: white;
 }
-section article .tabla2 button{
+
+section article .tabla2 button {
     font-size: 2.5vw;
     border-radius: 50%;
     color: white;
@@ -228,21 +269,24 @@ section article .tabla2 button{
     margin-left: 5%;
     transition: 0.3s;
 }
-section article .tabla2 button:hover{
+
+section article .tabla2 button:hover {
     font-size: 2vw;
     width: 6.8vw;
     height: 6.8vw;
     background-color: white;
     color: aqua;
 }
-section article .tabla2 .bton{
+
+section article .tabla2 .bton {
     width: 10%;
     height: 60px;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
 }
-section article .tabla2 .textoRandom{
+
+section article .tabla2 .textoRandom {
     color: white;
     font-size: 1vw;
     text-align: center;
@@ -252,7 +296,8 @@ section article .tabla2 .textoRandom{
     margin-left: auto;
     margin-top: 5%;
 }
-footer{
+
+footer {
     background-color: rgb(48, 46, 46);
     padding: 2%;
     padding-left: 5%;
@@ -260,45 +305,54 @@ footer{
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }
+
 footer .tablita {
     display: grid;
     grid-template-columns: 20% 20%;
     grid-template-rows: auto;
 }
-footer .tablita img{
+
+footer .tablita img {
     width: 4vw;
     height: 4vw;
 }
-footer .tablita p{
+
+footer .tablita p {
     letter-spacing: 0.2vw;
     font-size: 1.4vw;
 }
-footer .endTextFooter p{
+
+footer .endTextFooter p {
     color: gray;
     font-style: normal;
 }
-footer .endTextFooter p a{
+
+footer .endTextFooter p a {
     text-decoration: none;
     color: gray;
     font-style: normal;
 }
-footer .finalFooter p{
+
+footer .finalFooter p {
     color: gray;
 }
-.mobileTap{
+
+.mobileTap {
     opacity: 0;
     visibility: hidden;
     background-color: transparent;
     width: 0;
     height: 0;
 }
+
 @media screen and (max-width:768px) {
-    section{
+    section {
         background-image: url('assets/backgrounds/blueTech.png');
         background-attachment: fixed;
         background-size: cover;
     }
-    .mobileTap{
+
+    .mobileTap {
         opacity: 1;
         visibility: visible;
         background-color: transparent;
@@ -306,34 +360,41 @@ footer .finalFooter p{
         margin-left: 83%;
         transform: translateY(5vw);
     }
-    .mobileTap button{
+
+    .mobileTap button {
         width: 13vw;
         height: 15vw;
         background-color: transparent;
         border: transparent;
     }
-    .mobileTap button hr{
+
+    .mobileTap button hr {
         background-color: white;
     }
-    section header{
+
+    section header {
         margin-left: 5%;
     }
-    section header .Project{
+
+    section header .Project {
         font-size: 8vw;
         width: 10%;
         color: white;
     }
-    section header .headerPage nav ul{
+
+    section header .headerPage nav ul {
         width: 0;
         height: 0;
         visibility: hidden;
         opacity: 0;
     }
-    section header .headerPage nav ul a{
+
+    section header .headerPage nav ul a {
         color: white;
         font-size: 3vw;
         text-decoration: none;
     }
+
     /*
         section header .headerPage nav ul{
         display: grid;
@@ -356,129 +417,163 @@ footer .finalFooter p{
     }
     */
 
-    .satellites1{
+    .satellites1 {
         position: relative;
         width: 0vw;
         height: 0vw;
-        transform: translate(105vw,-97.5vw) rotateZ(180deg);
+        transform: translate(105vw, -97.5vw) rotateZ(180deg);
     }
-    .satellites1 img, .satellites2 img{
+
+    .satellites1 img,
+    .satellites2 img {
         width: 28vw;
         opacity: 1;
         animation: 10s brillar linear infinite alternate;
     }
+
     @keyframes brillar {
-        from{
+        from {
             opacity: 1;
-        }to{
+        }
+
+        to {
             opacity: 0;
         }
     }
-    .satellites2{
+
+    .satellites2 {
         position: relative;
-        transform: translate(-10vw,-40vw);
+        transform: translate(-10vw, -40vw);
         opacity: 0.5;
         width: 0px;
         height: 0px;
     }
-    .satellites3{
+
+    .satellites3 {
         position: fixed;
         z-index: 0;
-        transform: translate(25vw,-130vw);
+        transform: translate(25vw, -130vw);
         width: 30px;
         height: 30px;
     }
-    .satellites3 img{
+
+    .satellites3 img {
         width: 90vw;
         animation: identifier 20s infinite linear alternate;
     }
+
     @keyframes identifier {
-        from{
+        from {
             transform: scale(1);
             filter: brightness(50%);
-        }to{
+        }
+
+        to {
             transform: scale(1.2);
             filter: brightness(100%);
         }
     }
-    article,footer{
+
+    article,
+    footer {
         position: relative;
         z-index: 1;
     }
 
-    section header .tabla1 .firstTitle h1{
+    section header .tabla1 .firstTitle h1 {
         font-size: 9vw;
     }
-    section header .tabla1 img{
+
+    section header .tabla1 img {
         width: 15vw;
         height: 15vw;
     }
-    section header .tabla1 .description h2{
+
+    section header .tabla1 .description h2 {
         font-size: 4vw;
         text-align: start;
     }
-    section header .tabla1 .description{
+
+    section header .tabla1 .description {
         width: 95%;
     }
 
-    section article .firstSubtitle h2{
+    section article .firstSubtitle h2 {
         font-size: 10vw;
         text-align: start;
     }
-    section article .firstSubtitle{
+
+    section article .firstSubtitle {
         padding-top: 10%;
         width: 85%;
         margin: 0;
         margin-left: auto;
         margin-right: auto;
     }
-    section article .secondSubtitle h3{
+
+    section article .secondSubtitle h3 {
         font-size: 5vw;
         text-align: center;
     }
-    section article .secondSubtitle{
+
+    section article .secondSubtitle {
         width: 90%;
     }
-    section article .textosRandom p{
+
+    section article .textosRandom p {
         font-size: 4vw;
         text-align: start;
     }
-    section article .textosRandom{
+
+    section article .textosRandom {
         margin: 7%;
         display: grid;
         width: 90%;
         grid-template-columns: 100%;
         gap: 10%;
     }
-    section article .firstButton button{
+
+    section article .firstButton button {
         font-size: 3vw;
         margin-top: 50%;
         width: 20vw;
     }
-    section article .firstButton{
+
+    section article .firstButton {
         width: 18%;
     }
 
-    section article .tabla2 .secondTitle h1{
+    section article .tabla2 .secondTitle h1 {
         font-size: 7vw;
     }
-    section article .tabla2 button{
+
+    section article .tabla2 button {
         font-size: 4vw;
         width: 13vw;
         height: 13vw;
     }
-    section article .tabla2 .textoRandom{
+
+    section article .tabla2 button:hover {
+        font-size: 3.8vw;
+        width: 12.8vw;
+        height: 12.8vw;
+        background-color: white;
+        color: aqua;
+    }
+
+    section article .tabla2 .textoRandom {
         font-size: 3vw;
         text-align: center;
         width: 80%;
         margin-top: 5%;
     }
 
-    footer{
+    footer {
         display: grid;
         grid-template-columns: 100%;
         text-align: center;
     }
+
     footer .tablita {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -488,12 +583,14 @@ footer .finalFooter p{
         margin-left: auto;
         margin-right: auto;
     }
-    footer .tablita img{
+
+    footer .tablita img {
         width: 10vw;
         height: 10vw;
         transform: translateY(3vw);
     }
-    footer .tablita p{
+
+    footer .tablita p {
         letter-spacing: 0.6vw;
         font-size: 5vw;
     }
