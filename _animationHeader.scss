@@ -1,0 +1,21 @@
+@keyframes identifier {
+    from {
+        transform: scale(1);
+        filter: brightness(50%);
+    }
+
+    to {
+        transform: scale(1.2);
+        filter: brightness(100%);
+    }
+}
+
+@keyframes brillar {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

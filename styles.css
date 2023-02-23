@@ -1,0 +1,450 @@
+@keyframes identifier {
+  from {
+    transform: scale(1);
+    filter: brightness(50%);
+  }
+  to {
+    transform: scale(1.2);
+    filter: brightness(100%);
+  }
+}
+@keyframes brillar {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.app-mainSection__header {
+  margin-left: 10%;
+}
+.app-mainSection__header .app-mainSection__title {
+  font-size: 3vw;
+  width: 10%;
+  color: white;
+}
+.app-mainSection__header .app-mainSection__headerPage ul {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: auto;
+  width: 50%;
+  gap: 5%;
+  transform: translate(20vw, -7vw);
+  list-style-type: none;
+}
+.app-mainSection__header .app-mainSection__headerPage a {
+  color: white;
+  font-size: 1.5vw;
+  text-decoration: none;
+}
+.app-mainSection__header .app-mainSection__headerPage div hr {
+  width: 0vw;
+  opacity: 0;
+  transform: translate(-1.6vw, -1vw);
+  transition: 0.3s;
+}
+.app-mainSection__header .app-mainSection__headerPage a:hover hr {
+  width: 8vw;
+  opacity: 1;
+  transform: translate(-1.6vw, -1vw);
+}
+.app-mainSection__header .app-mainSection__firstTable {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: auto;
+  text-align: center;
+  padding: 10%;
+  margin-bottom: 0%;
+}
+.app-mainSection__header .app-mainSection__firstTable .app-mainSection__firstImg-firstTable img {
+  width: 5vw;
+  height: 5vw;
+  position: relative;
+  z-index: 3;
+  transform: scale(0.5);
+  transition: 1s;
+}
+.app-mainSection__header .app-mainSection__firstTable .app-mainSection__firstImg-firstTable img:hover {
+  transform: rotateY(180deg) scale(1);
+}
+.app-mainSection__header .app-mainSection__firstTable .app-mainSection__firstTitle-firstTable h1 {
+  font-size: 4vw;
+  color: white;
+  width: 100%;
+}
+.app-mainSection__header .app-mainSection__firstTable .app-mainSection__firstTitleDescription-firstTable {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0%;
+  width: 50%;
+}
+.app-mainSection__header .app-mainSection__firstTable .app-mainSection__firstTitleDescription-firstTable h2 {
+  font-size: 1vw;
+  color: rgb(199, 197, 197);
+}
+.app-mainSection__header .app-mainSection__satellites1 {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  transform: translate(60vw, -61.5vw);
+}
+.app-mainSection__header .app-mainSection__satellites1,
+.app-mainSection__header .app-mainSection__satellites2 {
+  width: 28vw;
+  opacity: 1;
+  animation: 10s brillar linear infinite alternate;
+}
+.app-mainSection__header .app-mainSection__satellites2 {
+  position: relative;
+  transform: translate(-10vw, -40vw);
+  opacity: 0.5;
+  width: 0px;
+  height: 0px;
+}
+.app-mainSection__header .app-mainSection__satellites3 {
+  position: relative;
+  transform: translate(30vw, -50vw);
+  width: 30px;
+  height: 30px;
+}
+.app-mainSection__header .app-mainSection__satellites3 img {
+  width: 60vw;
+  animation: identifier 20s infinite linear alternate;
+}
+
+@media screen and (max-width: 768px) {
+  .app-mainSection__header {
+    margin-left: 5%;
+  }
+  .app-mainSection__header .app-mainSection__title {
+    font-size: 8vw;
+    width: 10%;
+    color: white;
+  }
+  .app-mainSection__header .app-mainSection__headerPage ul {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .app-mainSection__header .app-mainSection__headerPage a {
+    color: white;
+    font-size: 3vw;
+    text-decoration: none;
+  }
+  .app-mainSection__header .app-mainSection__headerPage div hr {
+    width: 0vw;
+    opacity: 0;
+    transform: translate(-1.6vw, -1vw);
+    transition: 0.3s;
+  }
+  .app-mainSection__header .app-mainSection__headerPage a:hover hr {
+    width: 8vw;
+    opacity: 1;
+    transform: translate(-1.6vw, -1vw);
+  }
+  .app-mainSection__header .app-mainSection__firstTable {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: auto;
+    text-align: center;
+    padding: 10%;
+    margin-bottom: 0%;
+  }
+  .app-mainSection__header .app-mainSection__firstTable .app-mainSection__firstImg-firstTable img {
+    width: 15vw;
+    height: 15vw;
+  }
+  .app-mainSection__header .app-mainSection__firstTable .app-mainSection__firstTitle-firstTable h1 {
+    font-size: 9vw;
+  }
+  .app-mainSection__header .app-mainSection__firstTable .app-mainSection__firstTitleDescription-firstTable {
+    width: 95%;
+  }
+  .app-mainSection__header .app-mainSection__firstTable .app-mainSection__firstTitleDescription-firstTable h2 {
+    font-size: 4vw;
+    text-align: start;
+  }
+  .app-mainSection__header .app-mainSection__satellites1 {
+    position: relative;
+    width: 0vw;
+    height: 0vw;
+    transform: translate(105vw, -97.5vw) rotateZ(180deg);
+  }
+  .app-mainSection__header .app-mainSection__satellites1,
+  .app-mainSection__header .app-mainSection__satellites2 {
+    width: 28vw;
+    opacity: 1;
+    animation: 10s brillar linear infinite alternate;
+  }
+  .app-mainSection__header .app-mainSection__satellites2 {
+    position: relative;
+    transform: translate(-10vw, -40vw);
+    opacity: 0.5;
+    width: 0px;
+    height: 0px;
+  }
+  .app-mainSection__header .app-mainSection__satellites3 {
+    position: fixed;
+    z-index: 0;
+    transform: translate(25vw, -130vw);
+    width: 30px;
+    height: 30px;
+  }
+  .app-mainSection__header .app-mainSection__satellites3 img {
+    width: 90vw;
+    animation: identifier 20s infinite linear alternate;
+  }
+}
+.app-footer {
+  background-color: rgb(48, 46, 46);
+  padding: 2%;
+  padding-left: 5%;
+  color: white;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.app-footer .app-footer__firstTabla {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  grid-template-rows: auto;
+}
+.app-footer .app-footer__firstTabla img {
+  width: 4vw;
+  height: 4vw;
+}
+.app-footer .app-footer__firstTabla p {
+  letter-spacing: 0.2vw;
+  font-size: 1.4vw;
+}
+.app-footer .app-footer__textFooter p {
+  color: gray;
+  font-style: normal;
+}
+.app-footer .app-footer__textFooter p a {
+  text-decoration: none;
+  color: gray;
+  font-style: normal;
+}
+.app-footer .app-footer__endFooter {
+  color: gray;
+}
+
+@media screen and (max-width: 768px) {
+  .app-footer {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .app-footer .app-footer__firstTabla {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    width: 30%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .app-footer .app-footer__firstTabla img {
+    width: 10vw;
+    height: 10vw;
+    transform: translateY(3vw);
+  }
+  .app-footer .app-footer__firstTabla p {
+    letter-spacing: 0.6vw;
+    font-size: 5vw;
+  }
+}
+html, body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.mainSection {
+  background-image: url("assets/backgrounds/blueTech.png");
+  /*background-attachment: fixed;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+}
+.mainSection .app-mainSection__mobileTap {
+  display: none;
+  width: 13vw;
+  height: 15vw;
+  background-color: transparent;
+  border: transparent;
+}
+.mainSection .app-mainSection__article .app-mainSection__article__background {
+  background-color: white;
+}
+.mainSection .app-mainSection__article .app-mainSection__article__background .app-mainSection__article__firstSubtitle h2 {
+  font-size: 4vw;
+  text-align: center;
+  color: rgb(53, 52, 52);
+}
+.mainSection .app-mainSection__article .app-mainSection__article__background .app-mainSection__article__secondSubtitle {
+  width: 40%;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
+.mainSection .app-mainSection__article .app-mainSection__article__background .app-mainSection__article__secondSubtitle h3 {
+  font-size: 1.5vw;
+  text-align: center;
+  color: gray;
+}
+.mainSection .app-mainSection__article .app-mainSection__article__background .app-mainSection__article__textosRandom {
+  margin: 7%;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  gap: 10%;
+}
+.mainSection .app-mainSection__article .app-mainSection__article__background .app-mainSection__article__textosRandom p {
+  font-size: 1.5vw;
+  color: black;
+  text-align: center;
+}
+.mainSection .app-mainSection__article .app-mainSection__article__background .app-mainSection__article__firstButton {
+  width: 15%;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mainSection .app-mainSection__article .app-mainSection__article__background .app-mainSection__article__firstButton button {
+  border-radius: 25vw;
+  color: white;
+  background-color: aqua;
+  border: transparent;
+  font-size: 1.2vw;
+  margin-bottom: 100%;
+  width: 15vw;
+  transition: 0.5s;
+}
+.mainSection .app-mainSection__article .app-mainSection__article__background .app-mainSection__article__firstButton button:hover {
+  transform: rotateZ(9deg) rotateY(10deg);
+}
+.mainSection .app-mainSection__article .app-mainSection__article__tabla2 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  padding: 15%;
+  background-image: url("assets/backgrounds/runion.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.mainSection .app-mainSection__article .app-mainSection__article__tabla2 .app-mainSection__article__secondTitle h1 {
+  font-size: 3vw;
+  text-align: center;
+  color: white;
+}
+.mainSection .app-mainSection__article .app-mainSection__article__tabla2 .app-mainSection__article__secondButton {
+  margin: 0;
+  margin-inline: auto;
+}
+.mainSection .app-mainSection__article .app-mainSection__article__tabla2 .app-mainSection__article__secondButton button {
+  font-size: 2.5vw;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  width: 7vw;
+  height: 7vw;
+  background-color: aqua;
+  margin-left: 5%;
+  transition: 0.3s;
+}
+.mainSection .app-mainSection__article .app-mainSection__article__tabla2 .app-mainSection__article__secondButton button:hover {
+  font-size: 2vw;
+  width: 6.8vw;
+  height: 6.8vw;
+  background-color: white;
+  color: aqua;
+}
+.mainSection .app-mainSection__article .app-mainSection__article__tabla2 .app-mainSection__article__textoRandom {
+  color: white;
+  font-size: 1vw;
+  text-align: center;
+  width: 50%;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .mainSection {
+    background-image: url("assets/backgrounds/blueTech.png");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .mainSection .app-mainSection__mobileTap {
+    display: none;
+    width: 13vw;
+    height: 15vw;
+    background-color: transparent;
+    border: transparent;
+  }
+  .mainSection .app-mainSection__article {
+    position: relative;
+    z-index: 1;
+  }
+  .mainSection .app-mainSection__article .app-mainSection__article__background .app-mainSection__article__firstSubtitle {
+    padding-top: 10%;
+    width: 85%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainSection .app-mainSection__article .app-mainSection__article__background .app-mainSection__article__firstSubtitle h2 {
+    font-size: 10vw;
+    text-align: start;
+  }
+  .mainSection .app-mainSection__article .app-mainSection__article__background .app-mainSection__article__secondSubtitle {
+    width: 90%;
+  }
+  .mainSection .app-mainSection__article .app-mainSection__article__background .app-mainSection__article__secondSubtitle h3 {
+    font-size: 5vw;
+    text-align: center;
+  }
+  .mainSection .app-mainSection__article .app-mainSection__article__background .app-mainSection__article__textosRandom {
+    margin: 7%;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 100%;
+    gap: 10%;
+  }
+  .mainSection .app-mainSection__article .app-mainSection__article__background .app-mainSection__article__textosRandom p {
+    font-size: 4vw;
+    text-align: start;
+  }
+  .mainSection .app-mainSection__article .app-mainSection__article__background .app-mainSection__article__firstButton {
+    width: 18%;
+  }
+  .mainSection .app-mainSection__article .app-mainSection__article__background .app-mainSection__article__firstButton button {
+    font-size: 3vw;
+    margin-top: 50%;
+    width: 20vw;
+  }
+  .mainSection .app-mainSection__article .app-mainSection__article__tabla2 .app-mainSection__article__secondTitle h1 {
+    font-size: 7vw;
+  }
+  .mainSection .app-mainSection__article .app-mainSection__article__tabla2 .app-mainSection__article__secondButton button {
+    font-size: 4vw;
+    width: 13vw;
+    height: 13vw;
+  }
+  .mainSection .app-mainSection__article .app-mainSection__article__tabla2 .app-mainSection__article__textoRandom {
+    font-size: 3vw;
+    text-align: center;
+    width: 80%;
+    margin-top: 5%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

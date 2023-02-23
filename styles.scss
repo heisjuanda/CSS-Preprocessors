@@ -1,0 +1,203 @@
+@use 'sectionHeader';
+@use 'footer';
+$color-fondo: white;
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.mainSection{
+    background-image: url('assets/backgrounds/blueTech.png');
+    /*background-attachment: fixed;*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid transparent;
+    .app-mainSection__mobileTap{
+        display: none;
+        width: 13vw;
+        height: 15vw;
+        background-color: transparent;
+        border: transparent;
+    }
+    .app-mainSection__article{
+        .app-mainSection__article__background{
+            background-color: $color-fondo;
+            .app-mainSection__article__firstSubtitle{
+                h2{
+                    font-size: 4vw;
+                    text-align: center;
+                    color: rgb(53, 52, 52);
+                }
+            }
+            .app-mainSection__article__secondSubtitle{
+                width: 40%;
+                margin: 0;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 2%;
+                h3{
+                    font-size: 1.5vw;
+                    text-align: center;
+                    color: gray;
+                }
+            }
+            .app-mainSection__article__textosRandom{
+                margin: 7%;
+                display: grid;
+                grid-template-columns: 45% 45%;
+                gap: 10%;
+                p{
+                    font-size: 1.5vw;
+                    color: black;
+                    text-align: center;
+                }
+            }
+            .app-mainSection__article__firstButton{
+                width: 15%;
+                margin: 0;
+                margin-left: auto;
+                margin-right: auto;
+                button{
+                    border-radius: 25vw;
+                    color: white;
+                    background-color: aqua;
+                    border: transparent;
+                    font-size: 1.2vw;
+                    margin-bottom: 100%;
+                    width: 15vw;
+                    transition: 0.5s;
+                }
+                button:hover{
+                    transform: rotateZ(9deg) rotateY(10deg);
+                }
+            }
+        }
+        .app-mainSection__article__tabla2{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            padding: 15%;
+            background-image: url('assets/backgrounds/runion.png');
+            background-attachment: fixed;
+            background-size: cover;
+            .app-mainSection__article__secondTitle{
+                h1{
+                    font-size: 3vw;
+                    text-align: center;
+                    color: white;
+                }
+            }
+            .app-mainSection__article__secondButton{
+                margin: 0;
+                margin-inline: auto;
+                button{
+                    font-size: 2.5vw;
+                    border-radius: 50%;
+                    color: white;
+                    border: none;
+                    width: 7vw;
+                    height: 7vw;
+                    background-color: aqua;
+                    margin-left: 5%;
+                    transition: 0.3s;
+                }
+                button:hover{
+                    font-size: 2vw;
+                    width: 6.8vw;
+                    height: 6.8vw;
+                    background-color: white;
+                    color: aqua;
+                }
+            }
+            .app-mainSection__article__textoRandom{
+                color: white;
+                font-size: 1vw;
+                text-align: center;
+                width: 50%;
+                margin: 0;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 5%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .mainSection{
+        background-image: url('assets/backgrounds/blueTech.png');
+        background-attachment: fixed;
+        background-size: cover;
+        .app-mainSection__mobileTap{
+            display: none;
+            width: 13vw;
+            height: 15vw;
+            background-color: transparent;
+            border: transparent;
+        }
+        .app-mainSection__article{
+            position: relative;
+            z-index: 1;
+            .app-mainSection__article__background{
+                .app-mainSection__article__firstSubtitle{
+                    padding-top: 10%;
+                    width: 85%;
+                    margin: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    h2{
+                        font-size: 10vw;
+                        text-align: start;
+                    }
+                }
+                .app-mainSection__article__secondSubtitle{
+                    width: 90%;
+                    h3{
+                        font-size: 5vw;
+                        text-align: center;
+                    }
+                }
+                .app-mainSection__article__textosRandom{
+                    margin: 7%;
+                    display: grid;
+                    width: 90%;
+                    grid-template-columns: 100%;
+                    gap: 10%;
+                    p{
+                        font-size: 4vw;
+                        text-align: start;
+                    }
+                }
+                .app-mainSection__article__firstButton{
+                    width: 18%;
+                    button{
+                        font-size: 3vw;
+                        margin-top: 50%;
+                        width: 20vw;
+                    }
+                }
+            }
+            .app-mainSection__article__tabla2{
+                .app-mainSection__article__secondTitle{
+                    h1{
+                        font-size: 7vw;
+                    }
+                }
+                .app-mainSection__article__secondButton{
+                    button{
+                        font-size: 4vw;
+                        width: 13vw;
+                        height: 13vw;
+                    }
+                }
+                .app-mainSection__article__textoRandom{
+                    font-size: 3vw;
+                    text-align: center;
+                    width: 80%;
+                    margin-top: 5%;
+                }
+            }
+        }
+    }
+}

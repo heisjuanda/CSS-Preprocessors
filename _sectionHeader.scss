@@ -1,0 +1,232 @@
+@use 'animationHeader';
+
+.app-mainSection__header {
+    margin-left: 10%;
+
+    .app-mainSection__title {
+        font-size: 3vw;
+        width: 10%;
+        color: white;
+    }
+
+    .app-mainSection__headerPage {
+        ul {
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-rows: auto;
+            width: 50%;
+            gap: 5%;
+            transform: translate(20vw, -7vw);
+            list-style-type: none
+        }
+
+        a {
+            color: white;
+            font-size: 1.5vw;
+            text-decoration: none;
+        }
+
+        div {
+            hr {
+                width: 0vw;
+                opacity: 0;
+                transform: translate(-1.6vw, -1vw);
+                transition: 0.3s;
+            }
+        }
+
+        a:hover {
+            hr {
+                width: 8vw;
+                opacity: 1;
+                transform: translate(-1.6vw, -1vw);
+            }
+        }
+    }
+
+    .app-mainSection__firstTable {
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: auto;
+        text-align: center;
+        padding: 10%;
+        margin-bottom: 0%;
+
+        .app-mainSection__firstImg-firstTable {
+            img {
+                width: 5vw;
+                height: 5vw;
+                position: relative;
+                z-index: 3;
+                transform: scale(0.5);
+                transition: 1s;
+            }
+
+            img:hover {
+                transform: rotateY(180deg) scale(1);
+            }
+        }
+
+        .app-mainSection__firstTitle-firstTable {
+            h1 {
+                font-size: 4vw;
+                color: white;
+                width: 100%;
+            }
+        }
+
+        .app-mainSection__firstTitleDescription-firstTable {
+            margin: 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0%;
+            width: 50%;
+
+            h2 {
+                font-size: 1vw;
+                color: rgb(199, 197, 197);
+            }
+        }
+    }
+
+    .app-mainSection__satellites1 {
+        position: relative;
+        width: 0px;
+        height: 0px;
+        transform: translate(60vw, -61.5vw);
+    }
+
+    .app-mainSection__satellites1,
+    .app-mainSection__satellites2 {
+        width: 28vw;
+        opacity: 1;
+        animation: 10s brillar linear infinite alternate;
+    }
+
+    .app-mainSection__satellites2 {
+        position: relative;
+        transform: translate(-10vw, -40vw);
+        opacity: 0.5;
+        width: 0px;
+        height: 0px;
+    }
+
+    .app-mainSection__satellites3 {
+        position: relative;
+        transform: translate(30vw, -50vw);
+        width: 30px;
+        height: 30px;
+
+        img {
+            width: 60vw;
+            animation: identifier 20s infinite linear alternate;
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .app-mainSection__header {
+        margin-left: 5%;
+        .app-mainSection__title {
+            font-size: 8vw;
+            width: 10%;
+            color: white;
+        }
+    
+        .app-mainSection__headerPage {
+            ul {
+                width: 0;
+                height: 0;
+                visibility: hidden;
+                opacity: 0;
+            }
+    
+            a {
+                color: white;
+                font-size: 3vw;
+                text-decoration: none;
+            }
+    
+            div {
+                hr {
+                    width: 0vw;
+                    opacity: 0;
+                    transform: translate(-1.6vw, -1vw);
+                    transition: 0.3s;
+                }
+            }
+    
+            a:hover {
+                hr {
+                    width: 8vw;
+                    opacity: 1;
+                    transform: translate(-1.6vw, -1vw);
+                }
+            }
+        }
+    
+        .app-mainSection__firstTable {
+            display: grid;
+            grid-template-columns: 90%;
+            grid-template-rows: auto;
+            text-align: center;
+            padding: 10%;
+            margin-bottom: 0%;
+    
+            .app-mainSection__firstImg-firstTable {
+                img {
+                    width: 15vw;
+                    height: 15vw;
+                }
+            }
+    
+            .app-mainSection__firstTitle-firstTable {
+                h1 {
+                    font-size: 9vw;
+                }
+            }
+    
+            .app-mainSection__firstTitleDescription-firstTable {
+                width: 95%;
+                h2 {
+                    font-size: 4vw;
+                    text-align: start;
+                }
+            }
+        }
+    
+        .app-mainSection__satellites1 {
+            position: relative;
+            width: 0vw;
+            height: 0vw;
+            transform: translate(105vw, -97.5vw) rotateZ(180deg);
+        }
+    
+        .app-mainSection__satellites1,
+        .app-mainSection__satellites2 {
+            width: 28vw;
+            opacity: 1;
+            animation: 10s brillar linear infinite alternate;
+        }
+    
+        .app-mainSection__satellites2 {
+            position: relative;
+            transform: translate(-10vw, -40vw);
+            opacity: 0.5;
+            width: 0px;
+            height: 0px;
+        }
+    
+        .app-mainSection__satellites3 {
+            position: fixed;
+            z-index: 0;
+            transform: translate(25vw, -130vw);
+            width: 30px;
+            height: 30px;
+    
+            img {
+                width: 90vw;
+                animation: identifier 20s infinite linear alternate;
+            }
+        }
+    }
+}
